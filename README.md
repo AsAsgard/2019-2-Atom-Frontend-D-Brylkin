@@ -1,1 +1,1 @@
-## Репозиторий курса Frontend-разработка проекта Техноатом [![Build Status](https://travis-ci.com/AsAsgard/2019-2-Track-Frontend-D-Brylkin.svg?branch=master)](https://travis-ci.com/AsAsgard/2019-2-Track-Frontend-D-Brylkin)
+## Репозиторий курса Frontend-разработка проекта Техноатом [![Build Status](https://travis-ci.com/AsAsgard/2019-2-Atom-Frontend-D-Brylkin.svg?branch=master)](https://travis-ci.com/AsAsgard/2019-2-Atom-Frontend-D-Brylkin)
