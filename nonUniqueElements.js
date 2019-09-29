@@ -24,7 +24,12 @@ nonUniqueElements([5, 5, 5, 5, 5]) == [5, 5, 5, 5, 5]
 nonUniqueElements([10, 9, 10, 10, 9, 8]) == [10, 9, 10, 10, 9]
  */
 
+var MultiSet = require('mnemonist/multi-set');
+
 export default function nonUniqueElements(data) {
   // your solution goes here
-  return data
+  let values = MultiSet.from(data)
+  return data.filter(value => {
+    return values.count(value) > 1
+  })
 }
