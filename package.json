@@ -1,9 +1,9 @@
 {
-  "name": "first_project",
-  "description": "frst prjct",
+  "name": "atom-mail-2019-asasgard",
+  "homepage": "https://your_gh_login.github.io/your_repo_name",
+  "description": "Mail.Ru Group Frontend Atom course, 2019",
   "version": "0.1.0",
   "author": "Asasgard",
-  "homepage": "https://asasgard.github.io/frontend_project/",
   "dependencies": {
     "@emotion/core": "^10.0.14",
     "@emotion/styled": "^10.0.14",
@@ -45,6 +45,7 @@
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.4.0",
     "husky": "^0.14.3",
+    "gh-pages": "^2.1.1",
     "jest": "^24.8.0",
     "jest-transform-stub": "^2.0.0",
     "jscpd": "^2.0.15",
@@ -68,6 +69,8 @@
     "not dead"
   ],
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
@@ -78,11 +81,10 @@
     "lint": "npm run lint:js && npm run lint:dup && npm run lint:css",
     "lint-fix": "eslint --fix",
     "clean": "rm -rf dist",
-    "test": "CI=true npm run test:engine && npm run test:unit && npm run lint",
+    "test": "npm run test:engine && npm run test:unit && npm run lint",
     "test:engine": "check-engine",
     "test:sec": "npm audit || true",
     "test:unit": "cross-env NODE_ENV=test jest",
-    "test:coverage": "npm test -- --coverage",
     "lint:js": "eslint src/**/*.js",
     "lint:css": "stylelint 'client/**/*.{scss,css}' && stylelint --rd 'client/**/*.{scss,css}'",
     "lint:dup": "jscpd -g --threshold=1 client tests docker",
